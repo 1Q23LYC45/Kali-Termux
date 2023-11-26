@@ -39,8 +39,6 @@ echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
 cd \$(dirname \$0)
-pulseaudio --start
-## For rooted user: pulseaudio --start --system
 ## unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
 command="proot"
